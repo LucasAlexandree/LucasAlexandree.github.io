@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lucas Alexandre — Desenvolvedor .NET. Stack, experiência e projetos.">
+    <title>Lucas Alexandre | Dev .NET</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header class="topo">
+        <nav class="container nav">
+            <a href="#inicio" class="logo">&lt;LA /&gt;</a>
+            <ul class="menu">
+                <li><a href="#stack">Stack</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero container">
+            <p class="mono destaque">$ whoami</p>
+            <h1>Lucas Alexandre</h1>
+            <h2>Desenvolvedor .NET · Full Stack</h2>
+            <p class="resumo">
+                C# / ASP.NET Core MVC e Web API, EF Core, MySQL e SQL Server.
+                Front-end Razor + jQuery, React e Angular.
+                Atuação em sistema de prontuário eletrônico (PEP) multi-módulo na CEJAM.
+            </p>
+            <div class="acoes">
+                <a href="#experiencia" class="botao">Experiência</a>
+                <a href="https://github.com/LucasAlexandree" class="botao secundario" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </section>
+
+        <section id="stack" class="container secao">
+            <h3 class="titulo"><span class="mono">01.</span> Stack</h3>
+            <div class="grade">
+                <article class="cartao">
+                    <h4>Back-end</h4>
+                    <ul class="tags">
+                        <li>C#</li><li>.NET Core 3.1 / 6 / 8</li><li>ASP.NET Core MVC</li><li>ASP.NET Core Web API</li>
+                        <li>Entity Framework Core</li><li>Dapper</li><li>SignalR</li><li>Worker Service</li>
+                        <li>JWT Bearer</li><li>ASP.NET Identity</li><li>Middlewares</li><li>Blazor Server</li>
+                    </ul>
+                </article>
+                <article class="cartao">
+                    <h4>Front-end</h4>
+                    <ul class="tags">
+                        <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>TypeScript</li><li>jQuery</li>
+                        <li>Razor</li><li>Bootstrap 4/5</li><li>React (Vite)</li><li>Angular</li>
+                        <li>Chart.js</li><li>Uppy</li><li>Summernote</li><li>SweetAlert2</li>
+                    </ul>
+                </article>
+                <article class="cartao">
+                    <h4>Banco de Dados</h4>
+                    <ul class="tags">
+                        <li>MySQL 8</li><li>SQL Server</li><li>SQLite</li><li>PostgreSQL</li>
+                        <li>Stored Procedures</li><li>Pomelo EF Core</li><li>Migrations</li><li>Query tuning</li>
+                    </ul>
+                </article>
+                <article class="cartao">
+                    <h4>Ferramentas &amp; Integrações</h4>
+                    <ul class="tags">
+                        <li>Git / GitHub</li><li>Visual Studio</li><li>Gulp</li><li>REST APIs</li>
+                        <li>Notion API</li><li>GLPI REST API</li><li>Serilog</li><li>Sentry</li>
+                        <li>Power BI</li><li>Excel / VBA</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="experiencia" class="container secao">
+            <h3 class="titulo"><span class="mono">02.</span> Experiência — CEJAM</h3>
+            <p class="contexto mono">PEP · ASP.NET Core 3.1 MVC · MySQL · EF Core (Pomelo) · Razor + jQuery · SignalR</p>
+
+            <div class="linha-tempo">
+                <article class="item">
+                    <h4>Gestão de Chamados — classificação por situação</h4>
+                    <ul>
+                        <li>Novas entidades EF Core + mapeamento no DbContext, relação N:N usuário × situação.</li>
+                        <li>CRUD administrativo com vínculo a categorias N2 carregadas via endpoint hierárquico.</li>
+                        <li>Interação tipada no chat do chamado, regra de visibilidade por qualificação do usuário.</li>
+                        <li>Filtro client-side com busca em lista de checkboxes e scroll isolado.</li>
+                    </ul>
+                </article>
+                <article class="item">
+                    <h4>Gestão de Chamados — reabertura</h4>
+                    <ul>
+                        <li>Motivo e contagem de reabertura expostos na listagem, busca avançada e relatório.</li>
+                        <li>Ajuste de repository + view model + filtros no front.</li>
+                    </ul>
+                </article>
+                <article class="item">
+                    <h4>Eventos Adversos — dashboard de indicadores</h4>
+                    <ul>
+                        <li>Indicadores por stored procedure MySQL com múltiplos result sets.</li>
+                        <li>Agregação por data de ocorrência vs. data de notificação, <code>TIMESTAMPDIFF</code> + <code>AVG</code> por classificação.</li>
+                        <li>Consumo via ADO.NET (<code>DataSet</code>) e renderização com Chart.js.</li>
+                    </ul>
+                </article>
+                <article class="item">
+                    <h4>Eventos Adversos — relatório 5W2H e anexos</h4>
+                    <ul>
+                        <li>Correção de relatório lendo modelo legado; procedure passou a consolidar planos de ação 1:N.</li>
+                        <li>Upload de anexos com Uppy: restrições de tamanho/nome, tratamento de <code>restriction-failed</code> / <code>upload-error</code>.</li>
+                    </ul>
+                </article>
+                <article class="item">
+                    <h4>Certificação / Selos de qualidade</h4>
+                    <ul>
+                        <li>Recálculo de pontuação por seção com validação no backend.</li>
+                        <li>Fluxo de liberação de campos por perfil (auditor / autoavaliação) no JS.</li>
+                    </ul>
+                </article>
+                <article class="item">
+                    <h4>Versão do Sistema — mídia em notas</h4>
+                    <ul>
+                        <li>Substituição de base64 inline no Summernote por upload em endpoint dedicado (file storage).</li>
+                        <li>Otimização de GIF no browser: <code>ImageDecoder</code> + gifenc, resize/fps adaptativo, limite 10 MB.</li>
+                        <li>Backend reescreve bloco <code>NETSCAPE2.0</code> e corta frames para duração máx. 30 s.</li>
+                    </ul>
+                </article>
+                <article class="item">
+                    <h4>Infra de aplicação</h4>
+                    <ul>
+                        <li>Middleware de exceção de proxy + página de erro dedicada.</li>
+                        <li>Diagnóstico de <code>DEFINER</code> / grants MySQL em procedures.</li>
+                    </ul>
+                </article>
+                <article class="item">
+                    <h4>Integração Notion → GLPI (GMUD)</h4>
+                    <ul>
+                        <li>API .NET 8 com BackgroundService em polling sobre data source do Notion.</li>
+                        <li>Mapeamento de propriedades para Change do GLPI (API v1 <code>apirest.php</code>).</li>
+                        <li>Client mockado por interface, idempotência por status, segredos fora do repositório.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="projetos" class="container secao">
+            <h3 class="titulo"><span class="mono">03.</span> Projetos</h3>
+            <div class="grade">
+                <a class="cartao projeto" href="https://github.com/LucasAlexandree/ControleAtivosAPI" target="_blank" rel="noopener">
+                    <h4>ControleAtivosAPI</h4>
+                    <p>Cadastro, empréstimo e devolução de ativos.</p>
+                    <ul class="tags"><li>.NET 10</li><li>Web API</li><li>EF Core</li><li>SQLite</li><li>React</li></ul>
+                </a>
+                <a class="cartao projeto" href="https://github.com/LucasAlexandree/ExpenseControl" target="_blank" rel="noopener">
+                    <h4>ExpenseControl</h4>
+                    <p>Controle de gastos: pessoas, categorias, transações, totais.</p>
+                    <ul class="tags"><li>.NET</li><li>React</li><li>TypeScript</li></ul>
+                </a>
+                <a class="cartao projeto" href="https://github.com/LucasAlexandree/UxComexOrderManager" target="_blank" rel="noopener">
+                    <h4>UxComexOrderManager</h4>
+                    <p>Pedidos multi-item, baixa de estoque, histórico de status.</p>
+                    <ul class="tags"><li>.NET 6 MVC</li><li>Dapper</li><li>SQL Server</li><li>Bootstrap 5</li></ul>
+                </a>
+                <a class="cartao projeto" href="https://github.com/LucasAlexandree/Desafio.Umbler" target="_blank" rel="noopener">
+                    <h4>Desafio.Umbler</h4>
+                    <p>Consulta DNS / WHOIS com cache por TTL.</p>
+                    <ul class="tags"><li>.NET 6</li><li>EF Core</li><li>MySQL</li><li>Blazor</li></ul>
+                </a>
+                <a class="cartao projeto" href="https://github.com/LucasAlexandree/dart-test-Escribo" target="_blank" rel="noopener">
+                    <h4>dart-test-Escribo</h4>
+                    <p>Somatório de múltiplos de 3 ou 5 via CLI.</p>
+                    <ul class="tags"><li>Dart</li></ul>
+                </a>
+                <a class="cartao projeto" href="https://github.com/LucasAlexandree/curso-excel-vba-powerbi" target="_blank" rel="noopener">
+                    <h4>curso-excel-vba-powerbi</h4>
+                    <p>Macros, VBA e dashboards.</p>
+                    <ul class="tags"><li>Excel</li><li>VBA</li><li>Power BI</li></ul>
+                </a>
+            </div>
+        </section>
+
+        <section id="contato" class="container secao contato">
+            <h3 class="titulo"><span class="mono">04.</span> Contato</h3>
+            <div class="acoes">
+                <a href="https://www.linkedin.com/in/lucas-alexandre-7731423a1/" class="botao" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="mailto:luke.devcsharp@gmail.com" class="botao secundario">luke.devcsharp@gmail.com</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape container mono">
+        <p>© 2026 Lucas Alexandre · hospedado no GitHub Pages</p>
+    </footer>
+</body>
+</html>
