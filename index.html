@@ -1,255 +1,224 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Lucas Alexandre — Desenvolvedor .NET. Stack, experiência e projetos.">
     <title>Lucas Alexandre | Dev .NET</title>
-    <link rel="icon" href="https://github.com/LucasAlexandree.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header class="topo">
-        <div class="topo-conteudo">
-            <a href="https://github.com/LucasAlexandree" class="topo-marca" target="_blank" rel="noopener" aria-label="GitHub">
-                <svg height="32" viewBox="0 0 16 16" width="32" aria-hidden="true"><path fill="currentColor" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
-            </a>
-            <span class="topo-usuario">LucasAlexandree</span>
-        </div>
-        <nav class="abas">
-            <a href="#visao-geral" class="aba ativa">
-                <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z"></path></svg>
-                Overview
-            </a>
-            <a href="#experiencia" class="aba">
-                <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M6.75 0h2.5C10.216 0 11 .784 11 1.75V3h3.25c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25v-8.5C0 3.784.784 3 1.75 3H5V1.75C5 .784 5.784 0 6.75 0ZM3.5 9.5a3.49 3.49 0 0 1-2-.627v4.377c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V8.873a3.49 3.49 0 0 1-2 .627Zm-1.75-5a.25.25 0 0 0-.25.25V6a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V4.75a.25.25 0 0 0-.25-.25H1.75ZM9.5 3V1.75a.25.25 0 0 0-.25-.25h-2.5a.25.25 0 0 0-.25.25V3Z"></path></svg>
-                Experiência
-            </a>
-            <a href="#repositorios" class="aba">
-                <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>
-                Repositórios <span class="contador">6</span>
-            </a>
+        <nav class="container nav">
+            <a href="#inicio" class="logo">&lt;LA /&gt;</a>
+            <ul class="menu">
+                <li><a href="#stack">Stack</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
         </nav>
     </header>
 
-    <div class="layout">
-        <aside class="perfil">
-            <img class="avatar" src="https://github.com/LucasAlexandree.png?size=460" alt="Foto de Lucas Alexandre" width="296" height="296">
-            <h1 class="perfil-nome">
-                <span class="nome">Lucas Alexandre</span>
-                <span class="login">LucasAlexandree</span>
-            </h1>
-            <p class="bio">Desenvolvedor .NET full stack. C#, ASP.NET Core, EF Core, MySQL / SQL Server.</p>
-            <a href="https://github.com/LucasAlexandree" class="btn btn-bloco" target="_blank" rel="noopener">Seguir no GitHub</a>
-            <ul class="perfil-detalhes">
-                <li>
-                    <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M1.75 16A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 0 0 .25-.25V8.285a.25.25 0 0 0-.111-.208l-1.055-.703a.749.749 0 1 1 .832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0 1 14.25 16h-3.5a.766.766 0 0 1-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 0 1-.75-.75V14h-1v1.25a.75.75 0 0 1-.75.75Zm-.25-1.75c0 .138.112.25.25.25H4v-1.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75v1.25h2.25a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25ZM3.75 6h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 3.75A.75.75 0 0 1 3.75 3h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 3.75Zm4 3A.75.75 0 0 1 7.75 6h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 7 6.75ZM7.75 3h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 9.75A.75.75 0 0 1 3.75 9h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 9.75ZM7.75 9h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5Z"></path></svg>
-                    CEJAM
-                </li>
-                <li>
-                    <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25v-8.5C0 2.784.784 2 1.75 2ZM1.5 12.251c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V5.809L8.38 9.397a.75.75 0 0 1-.76 0L1.5 5.809v6.442Zm13-8.181v-.32a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25v.32L8 7.88Z"></path></svg>
-                    <a href="mailto:luke.devcsharp@gmail.com">luke.devcsharp@gmail.com</a>
-                </li>
-                <li>
-                    <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
-                    <a href="https://www.linkedin.com/in/lucas-alexandre-7731423a1/" target="_blank" rel="noopener">linkedin.com/in/lucas-alexandre</a>
-                </li>
-            </ul>
-        </aside>
+    <main>
+        <section id="inicio" class="hero container">
+            <p class="mono destaque">$ whoami</p>
+            <h1>Lucas Alexandre</h1>
+            <h2>Desenvolvedor .NET · Full Stack</h2>
+            <p class="resumo">
+                C# / ASP.NET Core MVC e Web API, EF Core, MySQL e SQL Server.
+                Front-end Razor + jQuery, React e Angular.
+                Atuação em sistema de prontuário eletrônico (PEP) multi-módulo na CEJAM.
+            </p>
+            <div class="acoes">
+                <a href="#experiencia" class="botao">Experiência</a>
+                <a href="https://github.com/LucasAlexandree" class="botao secundario" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </section>
 
-        <main class="conteudo">
-            <section id="visao-geral" class="caixa readme">
-                <div class="caixa-cabecalho mono">LucasAlexandree / README.md</div>
-                <div class="caixa-corpo">
-                    <h2>Olá, eu sou o Lucas Alexandre 👋🏻</h2>
-                    <p>Desenvolvedor focado em <strong>.NET</strong>, atuando em back-end e front-end em sistema de prontuário eletrônico (PEP) multi-módulo.</p>
+        <section id="stack" class="container secao">
+            <h3 class="titulo"><span class="mono">01.</span> Stack</h3>
+            <div class="grupos-stack">
+                <article class="cartao">
+                    <h4>Back-end</h4>
+                    <ul class="logos">
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/csharp/csharp-original.svg" alt="" loading="lazy">C#</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/dotnetcore/dotnetcore-original.svg" alt="" loading="lazy">.NET</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/blazor/blazor-original.svg" alt="" loading="lazy">Blazor</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/dart/dart-original.svg" alt="" loading="lazy">Dart</li>
+                    </ul>
+                    <ul class="tags">
+                        <li>ASP.NET Core MVC</li><li>Web API</li><li>EF Core</li><li>Dapper</li>
+                        <li>SignalR</li><li>Worker Service</li><li>JWT Bearer</li><li>Identity</li>
+                    </ul>
+                </article>
+                <article class="cartao">
+                    <h4>Front-end</h4>
+                    <ul class="logos">
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/html5/html5-original.svg" alt="" loading="lazy">HTML5</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/css3/css3-original.svg" alt="" loading="lazy">CSS3</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg" alt="" loading="lazy">JavaScript</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/typescript/typescript-original.svg" alt="" loading="lazy">TypeScript</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/jquery/jquery-original.svg" alt="" loading="lazy">jQuery</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/bootstrap/bootstrap-original.svg" alt="" loading="lazy">Bootstrap</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/react/react-original.svg" alt="" loading="lazy">React</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/angularjs/angularjs-original.svg" alt="" loading="lazy">Angular</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/vitejs/vitejs-original.svg" alt="" loading="lazy">Vite</li>
+                    </ul>
+                    <ul class="tags">
+                        <li>Razor</li><li>Chart.js</li><li>Uppy</li><li>Summernote</li><li>SweetAlert2</li>
+                    </ul>
+                </article>
+                <article class="cartao">
+                    <h4>Banco de Dados</h4>
+                    <ul class="logos">
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mysql/mysql-original.svg" alt="" loading="lazy">MySQL</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="" loading="lazy">SQL Server</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/postgresql/postgresql-original.svg" alt="" loading="lazy">PostgreSQL</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/sqlite/sqlite-original.svg" alt="" loading="lazy">SQLite</li>
+                    </ul>
+                    <ul class="tags">
+                        <li>Stored Procedures</li><li>Pomelo EF Core</li><li>Migrations</li><li>Query tuning</li>
+                    </ul>
+                </article>
+                <article class="cartao">
+                    <h4>Ferramentas &amp; Integrações</h4>
+                    <ul class="logos">
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/git/git-original.svg" alt="" loading="lazy">Git</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/github/github-original.svg" alt="" loading="lazy" class="inverter">GitHub</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/visualstudio/visualstudio-original.svg" alt="" loading="lazy">Visual Studio</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/vscode/vscode-original.svg" alt="" loading="lazy">VS Code</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/gulp/gulp-plain.svg" alt="" loading="lazy">Gulp</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/notion/notion-original.svg" alt="" loading="lazy" class="inverter">Notion</li>
+                        <li><span class="logo-texto xls">X</span>Excel / VBA</li>
+                        <li><span class="logo-texto pbi">BI</span>Power BI</li>
+                    </ul>
+                    <ul class="tags">
+                        <li>REST APIs</li><li>GLPI API</li><li>Serilog</li><li>Sentry</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
 
-                    <h3>🎨 Front-end</h3>
-                    <div class="techs">
-                        <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/html5/html5-original.svg" alt="" loading="lazy">HTML5</span>
-                        <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/css3/css3-original.svg" alt="" loading="lazy">CSS3</span>
-                        <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg" alt="" loading="lazy">JavaScript</span>
-                        <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/typescript/typescript-original.svg" alt="" loading="lazy">TypeScript</span>
-                        <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/jquery/jquery-original.svg" alt="" loading="lazy">jQuery</span>
-                        <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/bootstrap/bootstrap-original.svg" alt="" loading="lazy">Bootstrap</span>
-                        <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/react/react-original.svg" alt="" loading="lazy">React</span>
-                        <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/angularjs/angularjs-original.svg" alt="" loading="lazy">Angular</span>
-                        <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/vitejs/vitejs-original.svg" alt="" loading="lazy">Vite</span>
-                    </div>
+        <section id="experiencia" class="container secao">
+            <h3 class="titulo"><span class="mono">02.</span> Experiência — CEJAM</h3>
+            <p class="contexto mono">PEP · ASP.NET Core 3.1 MVC · MySQL · EF Core (Pomelo) · Razor + jQuery · SignalR</p>
 
-                    <h3>⚙️ Back-end</h3>
-                    <div class="techs">
-                        <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/csharp/csharp-original.svg" alt="" loading="lazy">C#</span>
-                        <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/dotnetcore/dotnetcore-original.svg" alt="" loading="lazy">.NET / ASP.NET Core</span>
-                        <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/blazor/blazor-original.svg" alt="" loading="lazy">Blazor</span>
-                        <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/dart/dart-original.svg" alt="" loading="lazy">Dart</span>
-                    </div>
-                    <p class="sub mono">EF Core · Dapper · SignalR · Web API · MVC / Razor · JWT · Identity · Worker Service</p>
+            <div class="linha-tempo">
+                <article class="item">
+                    <h4>Gestão de Chamados — classificação por situação</h4>
+                    <ul>
+                        <li>Novas entidades EF Core + mapeamento no DbContext, relação N:N usuário × situação.</li>
+                        <li>CRUD administrativo com vínculo a categorias N2 carregadas via endpoint hierárquico.</li>
+                        <li>Interação tipada no chat do chamado, regra de visibilidade por qualificação do usuário.</li>
+                        <li>Filtro client-side com busca em lista de checkboxes e scroll isolado.</li>
+                    </ul>
+                </article>
+                <article class="item">
+                    <h4>Gestão de Chamados — reabertura</h4>
+                    <ul>
+                        <li>Motivo e contagem de reabertura expostos na listagem, busca avançada e relatório.</li>
+                        <li>Ajuste de repository + view model + filtros no front.</li>
+                    </ul>
+                </article>
+                <article class="item">
+                    <h4>Eventos Adversos — dashboard de indicadores</h4>
+                    <ul>
+                        <li>Indicadores por stored procedure MySQL com múltiplos result sets.</li>
+                        <li>Agregação por data de ocorrência vs. data de notificação, <code>TIMESTAMPDIFF</code> + <code>AVG</code> por classificação.</li>
+                        <li>Consumo via ADO.NET (<code>DataSet</code>) e renderização com Chart.js.</li>
+                    </ul>
+                </article>
+                <article class="item">
+                    <h4>Eventos Adversos — relatório 5W2H e anexos</h4>
+                    <ul>
+                        <li>Correção de relatório lendo modelo legado; procedure passou a consolidar planos de ação 1:N.</li>
+                        <li>Upload de anexos com Uppy: restrições de tamanho/nome, tratamento de <code>restriction-failed</code> / <code>upload-error</code>.</li>
+                    </ul>
+                </article>
+                <article class="item">
+                    <h4>Certificação / Selos de qualidade</h4>
+                    <ul>
+                        <li>Recálculo de pontuação por seção com validação no backend.</li>
+                        <li>Fluxo de liberação de campos por perfil (auditor / autoavaliação) no JS.</li>
+                    </ul>
+                </article>
+                <article class="item">
+                    <h4>Versão do Sistema — mídia em notas</h4>
+                    <ul>
+                        <li>Substituição de base64 inline no Summernote por upload em endpoint dedicado (file storage).</li>
+                        <li>Otimização de GIF no browser: <code>ImageDecoder</code> + gifenc, resize/fps adaptativo, limite 10 MB.</li>
+                        <li>Backend reescreve bloco <code>NETSCAPE2.0</code> e corta frames para duração máx. 30 s.</li>
+                    </ul>
+                </article>
+                <article class="item">
+                    <h4>Infra de aplicação</h4>
+                    <ul>
+                        <li>Middleware de exceção de proxy + página de erro dedicada.</li>
+                        <li>Diagnóstico de <code>DEFINER</code> / grants MySQL em procedures.</li>
+                    </ul>
+                </article>
+                <article class="item">
+                    <h4>Integração Notion → GLPI (GMUD)</h4>
+                    <ul>
+                        <li>API .NET 8 com BackgroundService em polling sobre data source do Notion.</li>
+                        <li>Mapeamento de propriedades para Change do GLPI (API v1 <code>apirest.php</code>).</li>
+                        <li>Client mockado por interface, idempotência por status, segredos fora do repositório.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
 
-                    <h3>🗄️ Banco de Dados</h3>
-                    <div class="techs">
-                        <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="" loading="lazy">SQL Server</span>
-                        <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mysql/mysql-original.svg" alt="" loading="lazy">MySQL</span>
-                        <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/postgresql/postgresql-original.svg" alt="" loading="lazy">PostgreSQL</span>
-                        <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/sqlite/sqlite-original.svg" alt="" loading="lazy">SQLite</span>
-                    </div>
+        <section id="projetos" class="container secao">
+            <h3 class="titulo"><span class="mono">03.</span> Projetos</h3>
+            <div class="grade">
+                <a class="cartao projeto" href="https://github.com/LucasAlexandree/ControleAtivosAPI" target="_blank" rel="noopener">
+                    <h4>ControleAtivosAPI</h4>
+                    <p>Cadastro, empréstimo e devolução de ativos.</p>
+                    <ul class="tags"><li>.NET 10</li><li>Web API</li><li>EF Core</li><li>SQLite</li><li>React</li></ul>
+                </a>
+                <a class="cartao projeto" href="https://github.com/LucasAlexandree/ExpenseControl" target="_blank" rel="noopener">
+                    <h4>ExpenseControl</h4>
+                    <p>Controle de gastos: pessoas, categorias, transações, totais.</p>
+                    <ul class="tags"><li>.NET</li><li>React</li><li>TypeScript</li></ul>
+                </a>
+                <a class="cartao projeto" href="https://github.com/LucasAlexandree/UxComexOrderManager" target="_blank" rel="noopener">
+                    <h4>UxComexOrderManager</h4>
+                    <p>Pedidos multi-item, baixa de estoque, histórico de status.</p>
+                    <ul class="tags"><li>.NET 6 MVC</li><li>Dapper</li><li>SQL Server</li><li>Bootstrap 5</li></ul>
+                </a>
+                <a class="cartao projeto" href="https://github.com/LucasAlexandree/Desafio.Umbler" target="_blank" rel="noopener">
+                    <h4>Desafio.Umbler</h4>
+                    <p>Consulta DNS / WHOIS com cache por TTL.</p>
+                    <ul class="tags"><li>.NET 6</li><li>EF Core</li><li>MySQL</li><li>Blazor</li></ul>
+                </a>
+                <a class="cartao projeto" href="https://github.com/LucasAlexandree/dart-test-Escribo" target="_blank" rel="noopener">
+                    <h4>dart-test-Escribo</h4>
+                    <p>Somatório de múltiplos de 3 ou 5 via CLI.</p>
+                    <ul class="tags"><li>Dart</li></ul>
+                </a>
+                <a class="cartao projeto" href="https://github.com/LucasAlexandree/curso-excel-vba-powerbi" target="_blank" rel="noopener">
+                    <h4>curso-excel-vba-powerbi</h4>
+                    <p>Macros, VBA e dashboards.</p>
+                    <ul class="tags"><li>Excel</li><li>VBA</li><li>Power BI</li></ul>
+                </a>
+            </div>
+        </section>
 
-                    <h3>🛠️ Ferramentas &amp; Analytics</h3>
-                    <div class="techs">
-                        <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/visualstudio/visualstudio-original.svg" alt="" loading="lazy">Visual Studio</span>
-                        <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/vscode/vscode-original.svg" alt="" loading="lazy">VS Code</span>
-                        <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/git/git-original.svg" alt="" loading="lazy">Git</span>
-                        <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/github/github-original.svg" alt="" loading="lazy" class="inverter">GitHub</span>
-                        <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/gulp/gulp-plain.svg" alt="" loading="lazy">Gulp</span>
-                        <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/notion/notion-original.svg" alt="" loading="lazy" class="inverter">Notion API</span>
-                        <span class="tech"><span class="icone-texto xls">X</span>Excel / VBA</span>
-                        <span class="tech"><span class="icone-texto pbi">BI</span>Power BI</span>
-                    </div>
-                </div>
-            </section>
+        <section id="contato" class="container secao contato">
+            <h3 class="titulo"><span class="mono">04.</span> Contato</h3>
+            <div class="acoes">
+                <a href="https://www.linkedin.com/in/lucas-alexandre-7731423a1/" class="botao" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="mailto:luke.devcsharp@gmail.com" class="botao secundario">luke.devcsharp@gmail.com</a>
+            </div>
+        </section>
+    </main>
 
-            <section id="experiencia">
-                <h2 class="secao-titulo">Experiência · CEJAM</h2>
-                <p class="secao-sub mono">PEP · ASP.NET Core 3.1 MVC · MySQL · EF Core (Pomelo) · Razor + jQuery · SignalR</p>
-
-                <ol class="linha-tempo">
-                    <li class="evento">
-                        <span class="evento-icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/csharp/csharp-original.svg" alt=""></span>
-                        <div class="caixa evento-corpo">
-                            <h3>Gestão de Chamados — classificação por situação</h3>
-                            <ul>
-                                <li>Entidades EF Core + mapeamento no DbContext, relação N:N usuário × situação.</li>
-                                <li>CRUD administrativo vinculado a categorias N2 via endpoint hierárquico.</li>
-                                <li>Interação tipada no chat do chamado com regra de visibilidade por qualificação.</li>
-                                <li>Filtro client-side sobre lista de checkboxes com scroll isolado.</li>
-                            </ul>
-                            <div class="rotulos"><span>EF Core</span><span>MVC</span><span>jQuery</span><span>SignalR</span></div>
-                        </div>
-                    </li>
-                    <li class="evento">
-                        <span class="evento-icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/dotnetcore/dotnetcore-original.svg" alt=""></span>
-                        <div class="caixa evento-corpo">
-                            <h3>Gestão de Chamados — reabertura</h3>
-                            <ul>
-                                <li>Motivo e contagem de reabertura na listagem, busca avançada e relatório.</li>
-                                <li>Ajuste em repository, view model e filtros do front.</li>
-                            </ul>
-                            <div class="rotulos"><span>Repository</span><span>ViewModel</span><span>Razor</span></div>
-                        </div>
-                    </li>
-                    <li class="evento">
-                        <span class="evento-icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mysql/mysql-original.svg" alt=""></span>
-                        <div class="caixa evento-corpo">
-                            <h3>Eventos Adversos — dashboard de indicadores</h3>
-                            <ul>
-                                <li>Stored procedure MySQL com múltiplos result sets.</li>
-                                <li>Agregação por data de ocorrência vs. notificação; <code>TIMESTAMPDIFF</code> + <code>AVG</code> por classificação.</li>
-                                <li>Consumo via ADO.NET (<code>DataSet</code>) e renderização em Chart.js.</li>
-                            </ul>
-                            <div class="rotulos"><span>MySQL</span><span>ADO.NET</span><span>Chart.js</span></div>
-                        </div>
-                    </li>
-                    <li class="evento">
-                        <span class="evento-icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg" alt=""></span>
-                        <div class="caixa evento-corpo">
-                            <h3>Eventos Adversos — relatório 5W2H e anexos</h3>
-                            <ul>
-                                <li>Procedure de relatório consolidando planos de ação 1:N sobre modelo legado.</li>
-                                <li>Upload com Uppy: restrições de tamanho/nome, <code>restriction-failed</code> / <code>upload-error</code>.</li>
-                            </ul>
-                            <div class="rotulos"><span>MySQL</span><span>Uppy</span><span>SweetAlert2</span></div>
-                        </div>
-                    </li>
-                    <li class="evento">
-                        <span class="evento-icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/csharp/csharp-original.svg" alt=""></span>
-                        <div class="caixa evento-corpo">
-                            <h3>Certificação / Selos de qualidade</h3>
-                            <ul>
-                                <li>Recálculo de pontuação por seção com validação no backend.</li>
-                                <li>Liberação de campos por perfil (auditor / autoavaliação) no JS.</li>
-                            </ul>
-                            <div class="rotulos"><span>C#</span><span>jQuery</span><span>RBAC</span></div>
-                        </div>
-                    </li>
-                    <li class="evento">
-                        <span class="evento-icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/html5/html5-original.svg" alt=""></span>
-                        <div class="caixa evento-corpo">
-                            <h3>Versão do Sistema — mídia em notas</h3>
-                            <ul>
-                                <li>Troca de base64 inline no Summernote por upload em endpoint dedicado.</li>
-                                <li>Otimização de GIF no browser: <code>ImageDecoder</code> + gifenc, resize/fps adaptativo, limite 10 MB.</li>
-                                <li>Backend reescreve bloco <code>NETSCAPE2.0</code> e corta frames (máx. 30 s).</li>
-                            </ul>
-                            <div class="rotulos"><span>Web Codecs</span><span>gifenc</span><span>Summernote</span></div>
-                        </div>
-                    </li>
-                    <li class="evento">
-                        <span class="evento-icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/dotnetcore/dotnetcore-original.svg" alt=""></span>
-                        <div class="caixa evento-corpo">
-                            <h3>Infra de aplicação</h3>
-                            <ul>
-                                <li>Middleware de exceção de proxy + página de erro dedicada.</li>
-                                <li>Diagnóstico de <code>DEFINER</code> / grants MySQL em procedures.</li>
-                            </ul>
-                            <div class="rotulos"><span>Middleware</span><span>MySQL</span></div>
-                        </div>
-                    </li>
-                    <li class="evento">
-                        <span class="evento-icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/notion/notion-original.svg" alt="" class="inverter"></span>
-                        <div class="caixa evento-corpo">
-                            <h3>Integração Notion → GLPI (GMUD)</h3>
-                            <ul>
-                                <li>API .NET 8 com BackgroundService em polling sobre data source do Notion.</li>
-                                <li>Mapeamento de propriedades para Change do GLPI (API v1 <code>apirest.php</code>).</li>
-                                <li>Client mockado por interface, idempotência por status, segredos fora do repositório.</li>
-                            </ul>
-                            <div class="rotulos"><span>.NET 8</span><span>REST</span><span>Notion API</span><span>GLPI</span></div>
-                        </div>
-                    </li>
-                </ol>
-            </section>
-
-            <section id="repositorios">
-                <h2 class="secao-titulo">Repositórios fixados</h2>
-                <div class="repos">
-                    <a class="caixa repo" href="https://github.com/LucasAlexandree/ControleAtivosAPI" target="_blank" rel="noopener">
-                        <div class="repo-topo"><span class="repo-nome">ControleAtivosAPI</span><span class="selo">Public</span></div>
-                        <p>Cadastro, empréstimo e devolução de ativos. .NET 10 Web API + EF Core + SQLite, front React (Vite).</p>
-                        <span class="linguagem"><span class="cor" style="--cor:#178600"></span>C#</span>
-                    </a>
-                    <a class="caixa repo" href="https://github.com/LucasAlexandree/ExpenseControl" target="_blank" rel="noopener">
-                        <div class="repo-topo"><span class="repo-nome">ExpenseControl</span><span class="selo">Public</span></div>
-                        <p>Controle de gastos: pessoas, categorias, transações e totais. .NET + React + TypeScript.</p>
-                        <span class="linguagem"><span class="cor" style="--cor:#3178c6"></span>TypeScript</span>
-                    </a>
-                    <a class="caixa repo" href="https://github.com/LucasAlexandree/UxComexOrderManager" target="_blank" rel="noopener">
-                        <div class="repo-topo"><span class="repo-nome">UxComexOrderManager</span><span class="selo">Public</span></div>
-                        <p>Pedidos multi-item, baixa de estoque, histórico de status. .NET 6 MVC + Dapper + SQL Server.</p>
-                        <span class="linguagem"><span class="cor" style="--cor:#178600"></span>C#</span>
-                    </a>
-                    <a class="caixa repo" href="https://github.com/LucasAlexandree/Desafio.Umbler" target="_blank" rel="noopener">
-                        <div class="repo-topo"><span class="repo-nome">Desafio.Umbler</span><span class="selo">Public</span></div>
-                        <p>Consulta DNS / WHOIS com cache por TTL. .NET 6 + EF Core + MySQL + Blazor.</p>
-                        <span class="linguagem"><span class="cor" style="--cor:#178600"></span>C#</span>
-                    </a>
-                    <a class="caixa repo" href="https://github.com/LucasAlexandree/dart-test-Escribo" target="_blank" rel="noopener">
-                        <div class="repo-topo"><span class="repo-nome">dart-test-Escribo</span><span class="selo">Public</span></div>
-                        <p>Somatório de múltiplos de 3 ou 5 via CLI.</p>
-                        <span class="linguagem"><span class="cor" style="--cor:#00b4ab"></span>Dart</span>
-                    </a>
-                    <a class="caixa repo" href="https://github.com/LucasAlexandree/projeto-site" target="_blank" rel="noopener">
-                        <div class="repo-topo"><span class="repo-nome">projeto-site</span><span class="selo">Public</span></div>
-                        <p>Site estático desenvolvido no curso de Git e GitHub.</p>
-                        <span class="linguagem"><span class="cor" style="--cor:#e34c26"></span>HTML</span>
-                    </a>
-                </div>
-            </section>
-        </main>
-    </div>
-
-    <footer class="rodape">
-        <svg height="24" viewBox="0 0 16 16" width="24" aria-hidden="true"><path fill="currentColor" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
-        <span>© 2026 Lucas Alexandre · GitHub Pages</span>
+    <footer class="rodape container mono">
+        <p>© 2026 Lucas Alexandre · hospedado no GitHub Pages</p>
     </footer>
 </body>
 </html>
